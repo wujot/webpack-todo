@@ -5,7 +5,7 @@ class Title extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      tasks: 10
+      tasks: 3
     };
   }
 
@@ -13,7 +13,7 @@ class Title extends React.Component {
     return (
       <div className={style.Title}>
         <h1>To Do</h1>
-        <h2>{this.state.tasks}</h2>
+        <h2>( {this.state.tasks} )</h2>
         <p>...tasks</p>
       </div>
     );

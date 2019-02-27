@@ -1,0 +1,12 @@
+.TodoList {
+  list-style: none;
+}
+
+.TodoItem {
+  font-size: 24px;
+  border: 1px solid black;
+  border-radius: 3px;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
