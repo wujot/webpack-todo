@@ -2,6 +2,7 @@ import React from "react";
 import style from "./App.css";
 import Title from "../components/Title";
 import TodoList from "../components/TodoList";
+import { hot } from "react-hot-loader";
 
 class App extends React.Component {
   constructor(props) {
@@ -40,14 +41,10 @@ class App extends React.Component {
     return (
       <div className={style.TodoApp}>
         <Title />
-        <TodoList
-          data={this.state.data}
-          remove={this.removeTodo.bind(this)}
-          print={this.print.bind(this)}
-        />
+        <TodoList data={this.state.data} remove={this.removeTodo.bind(this)} />
       </div>
     );
   }
 }
 
-export default App;
+export default hot(module)(App);
